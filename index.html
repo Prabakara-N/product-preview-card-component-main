@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Product preview card component</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- main card start -->
+    <main class="main-card" id="main-card">
+      <div class="left-container">
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="product"
+          class="img-mobile"
+        />
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt="product"
+          class="img-desktop"
+        />
+      </div>
+      <div class="right-container">
+        <h4>PERFUME</h4>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p class="content">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price-container">
+          <p class="offer">$149.99</p>
+          <p class="original"><s> $169.99</s></p>
+        </div>
+        <button class="btn" id="btn">
+          <i class="fa-solid fa-cart-shopping"></i> Add to cart
+        </button>
+      </div>
+    </main>
+    <!-- main card end -->
+
+    <!-- hidden card start -->
+    <div class="hidden-card hide" id="hidden">
+      <i class="fa-solid fa-square-check"></i>
+      <p class="hide-para">
+        Your product added to cart (<i class="fa-solid fa-cart-shopping"></i>)
+        successfully
+      </p>
+    </div>
+    <!-- hidden card end -->
+
+    <!-- custom javascript -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
